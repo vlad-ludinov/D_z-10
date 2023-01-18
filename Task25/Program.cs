@@ -1,5 +1,20 @@
 ﻿using static System.Console;
 
+Write("Введите число A: ");
+int A = int.Parse(ReadLine()!);
+Write("Введите степень B: ");
+int B = int.Parse(ReadLine()!);
+
+
+
+
+
+
+
+
+
+
+
 int Pow(int number1, int number2)
 {
     int result = number1;
