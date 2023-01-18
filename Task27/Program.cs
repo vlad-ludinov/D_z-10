@@ -3,7 +3,8 @@
 Write("Введите число: ");
 string number = ReadLine();
 
-
+int sum = SumNumberOfNumber(number);
+WriteLine($"Сумма цифр в числе {number} = {sum}");
 
 int SumNumberOfNumber(string num)
 {
