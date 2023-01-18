@@ -1,8 +1,9 @@
 ﻿using static System.Console;
 
-
-
-
+Write("Введите минимальное возможное число");
+int minimum = int.Parse(ReadLine());
+Write("Введите максмиальное возможное число");
+int maximum = int.Parse(ReadLine());
 
 
 int [] createArray()
