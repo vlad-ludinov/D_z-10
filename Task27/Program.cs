@@ -1,11 +1,16 @@
 ﻿using static System.Console;
 
-int SumNumberOfNumber(string number)
+Write("Введите число: ");
+string number = ReadLine();
+
+
+
+int SumNumberOfNumber(string num)
 {
     int result = 0;
-    for(int i = 0; i < number.Length; i++)
+    for(int i = 0; i < num.Length; i++)
     {
-        result += number[i];
+        result += num[i];
     }
     return result;
 }
