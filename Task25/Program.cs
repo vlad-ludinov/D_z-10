@@ -5,10 +5,8 @@ int A = int.Parse(ReadLine()!);
 Write("Введите степень B: ");
 int B = int.Parse(ReadLine()!);
 
-
-
-
-
+int answer = Pow(A,B);
+WriteLine($"Число {A} в степени {B} = {answer}");
 
 
 
