@@ -1,17 +1,21 @@
 ﻿using static System.Console;
 
-Write("Введите минимальное возможное число");
+Write("Введите минимальное возможное число: ");
 int minimum = int.Parse(ReadLine());
-Write("Введите максмиальное возможное число");
+Write("Введите максмиальное возможное число: ");
 int maximum = int.Parse(ReadLine());
 
+int [] ar = createArray(minimum, maximum);
+printArray(ar);
 
-int [] createArray()
+int [] createArray(int min, int max)
 {
     int [] array = new int [8];
+    Random ran = new Random();
     for(int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random(min,max);
+
+        array[i] = ran. Next(min,max+1);
     }
     return array;
 }
@@ -23,5 +27,5 @@ void printArray(int [] arr)
     {
         Write($"{arr[i]}, ");
     }
-    WriteLine($"{arr[i]}]");
+    WriteLine($"{arr[arr.Length-1]}]");
 }
